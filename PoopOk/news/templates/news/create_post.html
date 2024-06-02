@@ -1,7 +1,16 @@
-<!-- news/templates/news/create_post.html -->
-<h1>Новый пост</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Создать</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створити новий пост</title>
+</head>
+<body>
+    <h1>Створити новий пост</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зберегти</button>
+    </form>
+    <a href="{% url 'post_list' %}">Повернутися до списку постів</a>
+</body>
+</html>

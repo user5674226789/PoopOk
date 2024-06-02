@@ -1,20 +1,29 @@
-<!-- news/templates/news/post_detail.html -->
-<h1>{{ post.title }}</h1>
-<p>{{ post.content }}</p>
-<p>{{ post.created_at }} by {{ post.author.username }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.body }}</p>
 
-<h2>Комментарии</h2>
-<ul>
-    {% for comment in post.comments.all %}
-        <li>{{ comment.content }} - {{ comment.author.username }} at {{ comment.created_at }}</li>
-    {% endfor %}
-</ul>
+    <h2>Коментарі</h2>
+    <ul>
+        {% for comment in post.comment_set.all %}
+            <li>
+                <p>{{ comment.author }}: {{ comment.body }}</p>
+            </li>
+        {% endfor %}
+    </ul>
 
-{% if user.is_authenticated %}
-    <h3>Добавить комментарий</h3>
+    <h2>Додати коментар</h2>
     <form method="post">
         {% csrf_token %}
         {{ comment_form.as_p }}
-        <button type="submit">Добавить</button>
+        <button type="submit">Відправити</button>
     </form>
-{% endif %}
+
+    <a href="{% url 'post_list' %}">Повернутися до списку постів</a>
+</body>
+</html>
