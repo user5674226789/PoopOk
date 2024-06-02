@@ -1,0 +1,19 @@
+<!-- news/templates/news/post_list.html -->
+<h1>Новости</h1>
+<ul>
+    {% for post in posts %}
+        <li>
+            <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+            <p>{{ post.created_at }} by {{ post.author.username }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+
+<!-- news/templates/news/create_post.html -->
+<h1>Новый пост</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Создать</button>
+</form>
