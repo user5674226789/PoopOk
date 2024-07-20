@@ -1,0 +1,25 @@
+@media screen and (max-width: 767px) {
+    .container {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+    .form-container {
+        display: flex;
+        gap: 26px;
+    }
+    .image {
+        width: 169px;
+        height: 245px;
+    } 
+
+    .form-avtorisation {
+        display: flex;
+        flex-direction: column;
+    }
+    .register-div {
+        display: flex;
+        padding-top: 24px;
+        gap: 5px;
+    }
+}
