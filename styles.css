@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+    .container {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+    .form-container {
+        display: flex;
+        gap: 26px;
+    }
+    .image {
+        width: 169px;
+        height: 245px;
+    } 
+
+    .form-avtorisation {
+        display: flex;
+        flex-direction: column;
+    }
+    .register-menu-div {
+        display: flex;
+        gap: 5px;
+    }
+
+    .register-menu-button {
+        margin-top: 24px;
+        margin-bottom: 19px;
+        font-size: 14px;
+        border-color: transparent;
+        background-color: transparent;
+        font-family: inika, sans-serif;
+}
+
+.form-h2 {
+    font-size: 14px;
+    font-family: "Montaga";
+    margin-bottom: 9px;
+    margin-top: 13px;
+}
+
+.register-input {
+    background-color: #F6F0F0;
+    border-color: transparent;
+    border-radius: 45px;
+}
+
+ .checkbox-div {
+    display: flex;
+    align-items: center;
+ }
+
+ .checkbox-text {
+    font-family: "Mali", cursive;
+    font-size: 8px;
+ }
+
+ .submit-button {
+    
+ }
+}
