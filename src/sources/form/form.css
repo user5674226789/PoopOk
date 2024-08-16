@@ -1,46 +1,5 @@
-@media screen and (max-width: 767px) {
-    .container {
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    }
-    .form-container {
-        display: flex;
-        gap: 26px;
-    }
-    .image {
-        width: 169px;
-        height: 245px;
-    } 
-
-    .form-avtorisation {
-        display: flex;
-        flex-direction: column;
-    }
-    .register-menu-div {
-        display: flex;
-        gap: 5px;
-    }
-
-    .register-menu-button {
-        margin-top: 24px;
-        margin-bottom: 19px;
-        font-size: 14px;
-        border-color: transparent;
-        background-color: transparent;
-        font-family: inika, sans-serif;
-}
-
-.form-h2 {
-    font-size: 14px;
-    font-family: "Montaga";
-    margin-bottom: 9px;
-}
-
-.register-input {
-    background-color: #F6F0F0;
-    margin-bottom: 13px;
-    border-color: transparent;
-    border-radius: 45px;
-}
+.input {
+   border-radius: 20;
+   background-color: #F6F0F0;
+   border-bottom: transparent;
 }
